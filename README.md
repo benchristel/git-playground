@@ -14,9 +14,13 @@ If you want to use commands that interact with remotes, like `fetch`, `pull`,
 `push`, and `remote`, make one or two more clones of your local copy of the repo.
 
 ```
-git clone /path/to/git-playground /tmp/git-playground-1
-git clone /path/to/git-playground /tmp/git-playground-2
+cd git-playground
+git clone . /tmp/git-playground-1
+git clone . /tmp/git-playground-2
 ```
+
+Then you can `cd /tmp/git-playground-1`, make some commits, and `git push` to
+share them with your original `git-playground` clone.
 
 This works because `git clone`ing a directory on your machine works just like
 cloning a repo from a service like GitHub or GitLab. Git is a _decentralized_
